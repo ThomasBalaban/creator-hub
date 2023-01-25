@@ -6,5 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./navigation.component.scss']
 })
 export class NavigationComponent {
+  signedIn: Boolean = false;
 
+  login() {
+    this.signedIn = true;
+  }
+
+  signOut() {
+    this.signedIn = false;
+  }
 }
